@@ -1,13 +1,10 @@
 ﻿atores:
+	Super Administrador
 	Administrador
-	coordenador
-	diretor
-	membro
+	Diretor
+	Membro da direta
+	Membro
 	Trainee
-
-
-
-
 
 	CASO DE USO 1:
 pre requisito:
@@ -43,13 +40,20 @@ Diretor:
 2.a 	- Não acha o membro facilmente :	buscar pelo nome
 2.b 	- Membro não existe : 				Solicita Admin (?)
 
-Coordenador
+	
+Membro da direta:
+1	-	O membro entra no PC e entra através de uma senha
+2	-	Ve ativdades de todos os membros e trainees da empresa atraves da interface
+3	-	vide caso do membro
+4	-	desloga
+
+Administrador
 1 - Loga com senha
 2 - Criar os usuários
 3 - Edita os usuarios
 4 - deslog
 
-Admin master:
+Super Administrador
 1 - O admin entra no pc e loga com senha
 2 - edita perfis
 3 -	cria perfis
