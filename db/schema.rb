@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150502034631) do
+ActiveRecord::Schema.define(version: 20150502065646) do
 
   create_table "atividade_tipos", force: :cascade do |t|
     t.string   "tipo",       limit: 255
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 20150502034631) do
   end
 
   add_index "atividades", ["atividade_tipo_id"], name: "index_atividades_on_atividade_tipo_id", using: :btree
+
+  create_table "diretorias", force: :cascade do |t|
+    t.string   "sigla_diretoria", limit: 255
+    t.string   "nome_diretoria",  limit: 255
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "lancamentos", force: :cascade do |t|
     t.datetime "checkin"
@@ -55,7 +62,7 @@ ActiveRecord::Schema.define(version: 20150502034631) do
   create_table "usuarios", force: :cascade do |t|
     t.string   "nome",            limit: 255
     t.string   "login",           limit: 255
-    t.string   "senha",           limit: 255
+    t.string   "password_digest", limit: 255
     t.string   "email",           limit: 255
     t.integer  "perfil_id",       limit: 4
     t.integer  "usuario_tipo_id", limit: 4

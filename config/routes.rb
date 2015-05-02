@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :diretorias
   resources :lancamentos
   resources :atividades
   resources :atividade_tipos

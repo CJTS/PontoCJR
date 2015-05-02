@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Diretorias</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sigla diretoria</th>
+      <th>Nome diretoria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diretorias.each do |diretoria| %>
+      <tr>
+        <td><%= diretoria.sigla_diretoria %></td>
+        <td><%= diretoria.nome_diretoria %></td>
+        <td><%= link_to 'Show', diretoria %></td>
+        <td><%= link_to 'Edit', edit_diretoria_path(diretoria) %></td>
+        <td><%= link_to 'Destroy', diretoria, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Diretoria', new_diretoria_path %>
