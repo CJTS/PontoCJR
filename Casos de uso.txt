@@ -1,0 +1,61 @@
+atores:
+	Administrador
+	coordenador
+	diretor
+	membro
+	Trainee
+
+
+
+
+
+	CASO DE USO 1:
+pre requisito:
+	internet
+	computador
+
+caso de uso:
+Membro/trainee:
+1	-	Entra no PC e loga no sistema através de senha
+2	-	Após acessar ele aperta no único botão da página afirmando que entrou na CJR
+3	-	O usuário logado ele vai cadastrando atividades de uma em uma hora que ja foram realizadas colocando o tempo de duração
+4	-	Após ter acabado tudo ele clica em terminar a sessão
+
+
+1.a 	-	Login não foi encontrado: 	O sistema avisa que não está cadastrado aquele login
+1.b 	-	Senha está incorreta:		O Sistema avisa que a senha está incorreta mas o login está certo
+1.c 	-	O usuário não possui conta	O membro pede para o cordenador via email
+
+2.a 	-	O membro esqueceu de dar checkout	-	Se o checkin foi feito a 15 horas atrás ele pergunta se ele esqueceu de dar checkou e da opção de dar checkout em uma determinada hora
+2.b 	- 	O membro esqueceu de dar checkout e voltou antes do limite de X	-	Foda-se
+
+
+3.a 	- 	O membor não deu sinal de vida 	-	O sistema espera 15 min e fecha sessão
+3.b 	-	A atividade que o membro fez não é reconhecida 	-	O membro irá cadastrar em outros
+
+	
+Diretor:
+1	-	O diretor entra no PC e entra através de uma senha
+2	-	Ve ativdades dos seus consultores e dos trainees atraves da interface
+3	-	vide caso do membro
+4	-	desloga
+
+2.a 	- Não acha o membro facilmente :	buscar pelo nome
+2.b 	- Membro não existe : 				Solicita Admin (?)
+
+Admin master:
+
+1 - O admin entra no pc e loga com senha
+2 - edita perfis
+3 -	cria perfis
+4 - desloga
+
+2.a 	- não acha perfil :									Busca pelo nome
+2.b 	- cargo executivo ja existe	:						Impede cadastro
+2.c 	- e-mail ja existe :								Impede cadastro
+2.d 	- usuario cadastra com e-mail diferente da cjr :	Impede cadastro
+
+3.a 	- e-mail ja existe :								Impede cadastro
+3.b 	- usuario cadastra com e-mail diferente da cjr :	Impede cadastro
+3.c 	- cargo executivo ja existe	:						Impede cadastro
+
