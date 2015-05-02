@@ -29,6 +29,7 @@ gem "rspec-rails", "~> 2.14.0"
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'tzinfo-data'
+gem 'bootstrap-sass',       '3.2.0.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
