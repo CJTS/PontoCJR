@@ -1,4 +1,4 @@
-atores:
+﻿atores:
 	Administrador
 	coordenador
 	diretor
@@ -43,8 +43,13 @@ Diretor:
 2.a 	- Não acha o membro facilmente :	buscar pelo nome
 2.b 	- Membro não existe : 				Solicita Admin (?)
 
-Admin master:
+Coordenador
+1 - Loga com senha
+2 - Criar os usuários
+3 - Edita os usuarios
+4 - deslog
 
+Admin master:
 1 - O admin entra no pc e loga com senha
 2 - edita perfis
 3 -	cria perfis
@@ -56,6 +61,10 @@ Admin master:
 2.d 	- usuario cadastra com e-mail diferente da cjr :	Impede cadastro
 
 3.a 	- e-mail ja existe :								Impede cadastro
+3.b 	- usuario cadastra com e-mail diferente da cjr :	Impede cadastro
+3.c 	- cargo executivo ja existe	:						Impede cadastro
+
+
 3.b 	- usuario cadastra com e-mail diferente da cjr :	Impede cadastro
 3.c 	- cargo executivo ja existe	:						Impede cadastro
 
