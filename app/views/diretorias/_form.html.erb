@@ -1,0 +1,25 @@
+<%= form_for(@diretoria) do |f| %>
+  <% if @diretoria.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diretoria.errors.count, "error") %> prohibited this diretoria from being saved:</h2>
+
+      <ul>
+      <% @diretoria.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sigla_diretoria %><br>
+    <%= f.text_field :sigla_diretoria %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_diretoria %><br>
+    <%= f.text_field :nome_diretoria %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

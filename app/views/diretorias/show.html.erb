@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sigla diretoria:</strong>
+  <%= @diretoria.sigla_diretoria %>
+</p>
+
+<p>
+  <strong>Nome diretoria:</strong>
+  <%= @diretoria.nome_diretoria %>
+</p>
+
+<%= link_to 'Edit', edit_diretoria_path(@diretoria) %> |
+<%= link_to 'Back', diretorias_path %>
