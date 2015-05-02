@@ -1,0 +1,33 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.login{
+	color: #0ff39a;
+	padding: 5px;
+	margin: 5px;
+}
+
+.login{
+	input{
+		padding: 5px;
+		margin: 5px;
+		border: none;
+		@include border-radius(15px);
+		width: 300px;
+		color: #00805d;
+		font-size: 15px;
+	}
+	input[type="password"]{
+	  	-webkit-text-security: disc;
+	}
+}
+
+.btn-login{
+	background-color: #d8f9ee;
+	color: #00805d;
+	width: 150px !important;
+}
