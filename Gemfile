@@ -28,6 +28,8 @@ gem "rspec-rails", "~> 2.14.0"
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'tzinfo-data'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
