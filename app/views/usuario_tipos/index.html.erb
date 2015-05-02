@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Usuario Tipos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuario_tipos.each do |usuario_tipo| %>
+      <tr>
+        <td><%= usuario_tipo.usuario %></td>
+        <td><%= link_to 'Show', usuario_tipo %></td>
+        <td><%= link_to 'Edit', edit_usuario_tipo_path(usuario_tipo) %></td>
+        <td><%= link_to 'Destroy', usuario_tipo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario tipo', new_usuario_tipo_path %>

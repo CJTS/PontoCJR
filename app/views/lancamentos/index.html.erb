@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lancamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Checkin</th>
+      <th>Checkout</th>
+      <th>Atividade</th>
+      <th>Usuario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lancamentos.each do |lancamento| %>
+      <tr>
+        <td><%= lancamento.checkin %></td>
+        <td><%= lancamento.checkout %></td>
+        <td><%= lancamento.atividade %></td>
+        <td><%= lancamento.usuario %></td>
+        <td><%= link_to 'Show', lancamento %></td>
+        <td><%= link_to 'Edit', edit_lancamento_path(lancamento) %></td>
+        <td><%= link_to 'Destroy', lancamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lancamento', new_lancamento_path %>

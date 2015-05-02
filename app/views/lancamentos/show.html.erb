@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Checkin:</strong>
+  <%= @lancamento.checkin %>
+</p>
+
+<p>
+  <strong>Checkout:</strong>
+  <%= @lancamento.checkout %>
+</p>
+
+<p>
+  <strong>Atividade:</strong>
+  <%= @lancamento.atividade %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @lancamento.usuario %>
+</p>
+
+<%= link_to 'Edit', edit_lancamento_path(@lancamento) %> |
+<%= link_to 'Back', lancamentos_path %>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Atividade Tipos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @atividade_tipos.each do |atividade_tipo| %>
+      <tr>
+        <td><%= atividade_tipo.tipo %></td>
+        <td><%= link_to 'Show', atividade_tipo %></td>
+        <td><%= link_to 'Edit', edit_atividade_tipo_path(atividade_tipo) %></td>
+        <td><%= link_to 'Destroy', atividade_tipo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Atividade tipo', new_atividade_tipo_path %>
