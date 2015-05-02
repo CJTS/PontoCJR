@@ -7,7 +7,6 @@
     <tr>
       <th>Nome</th>
       <th>Login</th>
-      <th>Senha</th>
       <th>Email</th>
       <th>Perfil</th>
       <th>Usuario tipo</th>
@@ -20,10 +19,9 @@
       <tr>
         <td><%= usuario.nome %></td>
         <td><%= usuario.login %></td>
-        <td><%= usuario.senha %></td>
         <td><%= usuario.email %></td>
-        <td><%= usuario.perfil %></td>
-        <td><%= usuario.usuario_tipo %></td>
+        <td><%= usuario.perfil.tipo %></td>
+        <td><%= usuario.usuario_tipo.usuario %></td>
         <td><%= link_to 'Show', usuario %></td>
         <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
         <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>

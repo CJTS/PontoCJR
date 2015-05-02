@@ -20,8 +20,8 @@
     <%= f.text_field :login %>
   </div>
   <div class="field">
-    <%= f.label :senha %><br>
-    <%= f.text_field :senha %>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
@@ -29,11 +29,11 @@
   </div>
   <div class="field">
     <%= f.label :perfil_id %><br>
-    <%= f.text_field :perfil_id %>
+    <%= f.select :perfil_id, options_for_select(Perfil.all.map{|s|[s.tipo, s.id]}) %>
   </div>
   <div class="field">
     <%= f.label :usuario_tipo_id %><br>
-    <%= f.text_field :usuario_tipo_id %>
+    <%= f.select :usuario_tipo_id, options_for_select(UsuarioTipo.all.map{|s|[s.usuario, s.id]}) %>
   </div>
   <div class="actions">
     <%= f.submit %>
