@@ -1,7 +1,15 @@
-<%= form_tag '/login', :class => 'login' do %>
+<div class="login">
+    <div class="pontao">
+      P.O.N.T.A.O
+    </div>
 
-  login:<br> <%= text_field_tag :login %><br>
-  Senha:<br> <%= password_field_tag :senha %><br>
-  <%= submit_tag "Entrar", :class => "btn btn-login" %>
+    <%= form_tag '/login', :class => 'loginForm' do %>
 
-<% end %>
+        <label for="login">LOGIN:</label><br>
+        <%= text_field_tag :login %><br>
+        <label for="senha">SENHA:</label><br>
+        <%= password_field_tag :senha %><br>
+      <%= submit_tag "Entrar", :class => "btn btn-login" %>
+
+    <% end %>
+</div>
